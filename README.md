@@ -19,3 +19,9 @@ Este projeto visa criar um sistema capaz de pré-diagnosticar a possibilidade de
 ## Escolha do Algoritmo
 
 Para a construção deste sistema de aprendizado de máquina, optamos pelo algoritmo de Regressão Linear. A regressão linear é uma técnica de análise de dados que prevê o valor de dados desconhecidos usando outro valor de dados relacionado e conhecido. Ela modela matematicamente a variável desconhecida ou dependente e a variável conhecida ou independente como uma equação linear. No nosso caso, utiliza os dados conhecidos (GLICOSE, PRESSÃO SANGUÍNEA, ÍNDICE DE MASSA CORPORAL e IDADE) para calcular uma variável que, ao ser calculada, o sistema pode prever a possibilidade de o paciente ter ou não diabetes.
+
+##Desenvolvido por:
+- **CRISTIAN LEMES RA: 2020101531
+- **JOÃO HENRIQUE DUARTE HEINDYK RA: 2021103830
+- **VINICIUS ANDRÉ FROGGEL DE MIRANDA RA: 2021102573
+- **LUCAS GABRIEL LIKES RA: 2021206275
