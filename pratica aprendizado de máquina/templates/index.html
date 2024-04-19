@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Previsão de Diabetes</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            position: relative;
+            color: #000000;
+                height: 100vh;  
+                margin: 0;
+                padding: 0;
+                display: flex;
+                align-items: center;
+            }
+            body::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('/static/diabete.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            opacity: 0.8;
+        }
+        .container {
+            margin-top: 50px;
+            z-index: 1;
+        }
+        .form-container {
+            background-color: rgba(255, 255, 255, 0.5);
+            border-radius: 20px;
+            padding: 20px;
+            box-shadow: 0px 0px 10px 0px rgba(124, 124, 124, 0.5);
+        }
+        .form-control {
+            border-radius: 10px;
+            background-color: transparent;
+            padding: 10px;
+        }
+        .btn {
+            border-radius: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center mb-5">Previsão de Diabetes</h1>
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="form-container">
+                    <form action="/predict" method="post">
+                        <div class="form-group">
+                            <label for="glucose">Glucose:</label>
+                            <input type="text" class="form-control" id="glucose" name="glucose">
+                        </div>
+                        <div class="form-group">
+                            <label for="blood_pressure">Pressão Sanguínea:</label>
+                            <input type="text" class="form-control" id="blood_pressure" name="blood_pressure">
+                        </div>
+                        <div class="form-group">
+                            <label for="bmi">BMI:</label>
+                            <input type="text" class="form-control" id="bmi" name="bmi">
+                        </div>
+                        <div class="form-group">
+                            <label for="age">Idade:</label>
+                            <input type="text" class="form-control" id="age" name="age">
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">Prever</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Incluir o Bootstrap JS (opcional, necessário apenas para alguns recursos do Bootstrap) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
